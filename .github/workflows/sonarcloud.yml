@@ -20,8 +20,8 @@ jobs:
       with:
 
           args: >
-            -Dsonar.organization=lvyinggithub
-            -Dsonar.projectKey=lvyinggithub_grafana
+            -Dsonar.organization=lvyin1
+            -Dsonar.projectKey=lvyin1
             -Dsonar.python.coverage.reportPaths=coverage.xml
             -Dsonar.sources=lib/
             -Dsonar.test.exclusions=tests/**
