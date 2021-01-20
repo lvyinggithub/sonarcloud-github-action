@@ -18,7 +18,7 @@ jobs:
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       with:
-          projectBaseDir: images
+
           args: >
             -Dsonar.organization=lvyinggithub
             -Dsonar.projectKey=lvyinggithub_grafana
@@ -27,4 +27,6 @@ jobs:
             -Dsonar.test.exclusions=tests/**
             -Dsonar.tests=tests/
             -Dsonar.verbose=true
-
+      env:
+        GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
