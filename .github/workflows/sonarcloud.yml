@@ -20,7 +20,7 @@ jobs:
       with:
 
           args: >
-            -Dsonar.organization=lvyin1
+            -Dsonar.organization=lvyinggithub
             -Dsonar.projectKey=lvyin1
             -Dsonar.python.coverage.reportPaths=coverage.xml
             -Dsonar.sources=lib/
