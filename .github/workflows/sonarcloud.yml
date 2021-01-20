@@ -18,7 +18,7 @@ jobs:
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       with:
-          projectBaseDir: my-custom-directory
+          projectBaseDir: images
           args: >
             -Dsonar.organization=lvyinggithub
             -Dsonar.projectKey=lvyinggithub_grafana
